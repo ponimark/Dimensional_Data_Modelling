@@ -74,14 +74,6 @@ This parallel project manages data related to players and their season performan
 
 ---
 
-## Combined Pipeline Highlights
-
-- Both pipelines utilize **Cumulative Table Design (CTD)** to aggregate incremental data efficiently before applying SCD transformations.  
-- The use of **Slowly Changing Dimension Type 2 (SCD Type 2)** enables robust historical data management, preserving full change history over time.  
-- Incremental update scripts optimize processing by applying changes since the last run, reducing overhead and improving performance.  
-- Tables **actor_films** and **player_season** hold domain-specific analytic data, including status flags, calculated averages, and time-sequenced records.
-
----
 ### 📂 Files – Player-Season Project
 
 | File Name                          | Description                                                            |
@@ -92,6 +84,15 @@ This parallel project manages data related to players and their season performan
 | `SCD_TYPE2_INCREMENTAL_UPDATE.sql`| Adds new records where player attributes have changed (incremental).   |
 
 
+
+## Combined Pipeline Highlights
+
+- Both pipelines utilize **Cumulative Table Design (CTD)** to aggregate incremental data efficiently before applying SCD transformations.  
+- The use of **Slowly Changing Dimension Type 2 (SCD Type 2)** enables robust historical data management, preserving full change history over time.  
+- Incremental update scripts optimize processing by applying changes since the last run, reducing overhead and improving performance.  
+- Tables **actor_films** and **player_season** hold domain-specific analytic data, including status flags, calculated averages, and time-sequenced records.
+
+---
 
 ## Getting Started
 
